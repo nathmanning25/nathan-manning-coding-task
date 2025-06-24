@@ -1,3 +1,5 @@
+This script has been written to be injected into dev tools console or an extension such as Tampermonkey.. If using Tampermonkey to execute this script update // @match https://www.hummloan.com/*
+
 This script tracks the most viewed merchant categories across /merchants/ pages and displays a "Most Viewed Merchant" widget section on the homepage (/) 
 
 Features
@@ -41,6 +43,7 @@ On homepage: a section with data-id="59c92fe4" as the injection point
 
 Example localStorage Format
 
+```json
 {
   "3Gen Auto Repairs": {
     "viewCount": 1,
@@ -53,7 +56,7 @@ Example localStorage Format
         "isOnline": true,
         "timeStamp": "Jun 24, 2025, 05:14 PM"
       },
-	   {
+      {
         "title": "3Gen Auto Repairs",
         "image": ".................",
         "imageAlt": "",
@@ -64,6 +67,7 @@ Example localStorage Format
     ]
   }
 }
+```
 
 Notes
 If data-id="59c92fe4" changes in Elementor, update the selector in the script (targetSection).
