@@ -46,7 +46,7 @@ Example localStorage Format
 ```json
 {
   "3Gen Auto Repairs": {
-    "viewCount": 1,
+    "viewCount": 2,
     "storeInformation": [
       {
         "title": "3Gen Auto Repairs",
